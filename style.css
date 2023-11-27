@@ -1,0 +1,16 @@
+
+header , footer{
+    height: 10vh;
+    width: 100%;
+    background:#444;
+    color: rgb(197, 197, 255);
+}
+header  div , 
+footer div{
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer div{
+    justify-content: center;
+}
