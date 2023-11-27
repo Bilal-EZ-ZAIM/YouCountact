@@ -10,7 +10,7 @@ if (isset($_POST["reg"])) {
     $password = htmlspecialchars(trim($_POST['dpassword']));
     if ($password_U === $password) {
         $hashed_password = password_hash($password_U, PASSWORD_DEFAULT);
-        require("./con.php");
+        require("./conect.php");
 
         $get_email = "SELECT password_U FROM `users` WHERE Email_U='$email'";
         $result = mysqli_query($conn, $get_email);

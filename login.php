@@ -95,7 +95,7 @@ require("./conect.php");
 
                 $_SESSION["glob_ID"] = "$as[Nom_U]";
                 $_SESSION["id_user"] = "$as[ID_U]";
-                header("location: http://localhost/server/breif/index.php");
+                header("location: /breif/index.php");
 
 
             } else {

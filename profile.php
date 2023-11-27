@@ -227,7 +227,7 @@ if (!$_SESSION["glob_ID"]) {
         $email = htmlspecialchars(trim($_POST['email']));
         $telephone = htmlspecialchars(trim($_POST['telephone']));
         $number = htmlspecialchars(trim($_POST['number']));
-        require("./con.php");
+        require("./conect.php");
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
@@ -272,7 +272,7 @@ if (!$_SESSION["glob_ID"]) {
                 die("Connection failed: " . mysqli_connect_error());
             }
             $Id_User = $_SESSION["id_user"];
-            require("./con.php");
+            require("./conect.php");
             $sql = "SELECT *  FROM contacts WHERE ID_US = $Id_User";
 
             $result = mysqli_query($conn, $sql);
